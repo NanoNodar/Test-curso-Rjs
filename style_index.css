@@ -1,0 +1,87 @@
+*{
+	font-family: 'Ubuntu', sans-serif;
+	margin: auto;
+	color: #fff;
+}
+.container{
+	background: #72b53f;
+	display: grid;
+	grid-template-areas: 
+	"nav nav nav"
+	"aside main main"
+	"aside main main";
+	grid-template-rows: 80px 1fr;
+	grid-template-columns: 1fr 1fr;
+	height: 100vh;
+}
+.titulo{
+	grid-area: nav;
+	text-align: center;
+	margin: 10px;
+	padding: 10px;
+	font-size: 1.8em;
+}
+.subcontainer{
+	padding: 20px;
+	margin: auto;
+	text-align: center;
+	border: 3px solid #fff;
+	border-radius: 10px;
+	font-size: 1.4em;
+}
+.login{
+	grid-area: main;
+	background-color: #53852d;
+}
+.register{
+	grid-area: aside;
+	background-color: #53852d;
+}
+h2{
+	margin-bottom: 10px;
+}
+input{
+	width: 450px;
+	margin: 5px;
+	padding: 7px;
+	font-size: 20px;
+	border: none;
+	border-bottom: 2px solid #fff;
+	background: transparent;
+	color: #fff;
+	outline: none;
+}
+input::placeholder{
+	color: #fff;
+    opacity: 0.3;
+}
+input[type="checkbox"] {
+	background-position: 0 0; width: 16px; height: 13px;
+}
+input[type="checkbox"]:checked {
+	background-position: 0 -21px; width: 16px; height: 13px;
+}
+h4{
+	display: inline;
+	font-size: 20px;
+}
+.imagen_captcha{
+	margin-top: 6px;
+}
+.container_submit{
+	margin: 7px;
+}
+input[type="submit"] {
+	display: block;
+  	width: 35%;
+  	margin: auto;
+  	border: 1px solid #fff;
+	border-radius: 3px;
+  	cursor: pointer;
+  	background-color: #186110;
+  	font-size: 20px;
+	color: #fff;
+}
+input[type="submit"]:hover {
+	background-color: #188110;
+}
